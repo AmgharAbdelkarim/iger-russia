@@ -3,7 +3,6 @@ import Layout from "../../../components/layout"
 import Image from "next/image"
 
 const UniversityDetails = ({ universityDetails }) => {
-  console.log({ universityDetails })
   const { name, image, aboutUniversity } = universityDetails
   return (
     <Layout>

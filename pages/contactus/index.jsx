@@ -31,12 +31,7 @@ const ContactUs = () => {
                   Address:
                 </h3>
                 <p className="text-neutral9 text-sm font-normal">
-                  {" "}
-                  <span className="text-primary">
-                    <strong>Moscow&nbsp;</strong>
-                  </span>
-                  ( Москва г,&nbsp;бц гефест дмитровское шоссе 157 ) &nbsp; BC
-                  ”Gefest” Dmitrovskoe shose № 157
+                  Moscow , Presnenskaya Naberezhnaya, 8 стр 1, Moscow, 123112
                 </p>
               </div>
             </div>
@@ -62,7 +57,7 @@ const ContactUs = () => {
                   Email:
                 </h3>
                 <p className="text-neutral9 text-sm font-normal">
-                  info@yoursite.com
+                  info@studyiger.com
                 </p>
               </div>
             </div>

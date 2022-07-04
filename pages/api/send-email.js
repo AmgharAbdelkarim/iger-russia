@@ -1,6 +1,13 @@
 // async..await is not allowed in global scope, must use a wrapper
 import nodemailer from "nodemailer"
-async function main() {
+async function main({
+  subject,
+  firstName,
+  lastName,
+  email,
+  message,
+  phoneNumber,
+}) {
   // Generate test SMTP service account from ethereal.email
   // Only needed if you don't have a real mail account for testing
 
@@ -20,26 +27,40 @@ async function main() {
     // send mail with defined transport object
     let info = await transporter.sendMail({
       from: "odr4643@gmail.com", // sender address
-      to: "amghar.abdelkarim1@gmail.com", // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body
+      to: "info@studyiger.com", // list of receivers
+      subject, // Subject line
+      text: `
+      name : ${firstName} ${lastName}
+      email : ${email}
+      phoneNumber: ${phoneNumber}
+      message : ${message}
+      `, // plain text body
+      html: `
+      name : ${firstName} ${lastName}
+      email : ${email}
+      phoneNumber: ${phoneNumber}
+      message : ${message}
+      `, // html body
     })
 
-    console.log("Message sent: %s", info.messageId)
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info))
     return info
   } catch (error) {
-    return "error"
+    return error
   }
 
   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
 
 export default async function handler(req, res) {
-  const result = await main()
+  const { subject, firstName, lastName, email, message, phoneNumber } = req.body
+
+  const result = await main({
+    subject,
+    firstName,
+    lastName,
+    email,
+    message,
+    phoneNumber,
+  })
   res.status(200).json({ result })
 }
