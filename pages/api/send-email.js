@@ -43,7 +43,10 @@ async function main({
       `, // html body
     })
 
-    return info
+    return {
+      status: 200,
+      detail : "Message was sent"
+    }
   } catch (error) {
     return error
   }
