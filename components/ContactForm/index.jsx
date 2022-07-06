@@ -31,7 +31,7 @@ const ContactForm = () => {
       last_name: lastName,
       email,
       message,
-      phoneNumber,
+      phone: phoneNumber,
     } = data
     try {
       await fetch(`/api/send-email`, {
