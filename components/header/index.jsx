@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react"
-import Logo from "../../assets/icons/logo_adobe_express.svg"
+import Logo from "../../assets/icons/study-iger-logo.svg"
 
 
 const Header = () => {

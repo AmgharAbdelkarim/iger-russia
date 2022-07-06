@@ -57,7 +57,7 @@ const ContactUs = () => {
                   Email:
                 </h3>
                 <p className="text-neutral9 text-sm font-normal">
-                  info@studyiger.com
+                  studyiger@gmail.com
                 </p>
               </div>
             </div>

@@ -17,10 +17,16 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>Study IGER</title>
           <meta httpEquiv="Accept-CH" content="DPR, Width, Viewport-Width" />
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"></link>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+          ></link>
+
+          <link rel="icon" href="/study-iger-logo.ico" />
         </Head>
-        <body >
+        <body>
           <Main />
           <div id="modal-root"></div>
           <div id="overlay-root"></div>
