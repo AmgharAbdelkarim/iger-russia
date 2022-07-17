@@ -1,9 +1,21 @@
 import React from "react"
+import Head from "next/head"
 import Layout from "../../components/layout"
 
 const StudyInRussia = () => {
   return (
     <Layout>
+      <Head>
+        <title>Study In Russia - Study IGER</title>
+        <meta name="description" content="Study In Russia" />
+        <meta property="og:title" content="Study In Russia" />
+        <meta property="og:description" content="Study In Russia" />
+        <meta
+          property="og:url"
+          content="https://www.studyiger.com/studyinrussia"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
       <div className="my-20 p-5 lg:p-0 lg:max-w-screen-lg md:max-w-screen-md max-w-screen-lg mx-auto">
         <h1 className="text-primary text-2xl font-bold text-center mb-5">
           Study In Russia{" "}
