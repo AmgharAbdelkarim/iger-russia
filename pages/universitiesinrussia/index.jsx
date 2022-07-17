@@ -8,8 +8,8 @@ const UniversitiesInRussia = () => {
     <Layout>
       <Head>
         <title>Russia Universities - Study IGER</title>
-        <meta name="description" content="Russia Universities - Study IGER" />
-        <meta property="og:title" content="Russia Universities - Study IGER" />
+        <meta name="description" content="Russia Universities" />
+        <meta property="og:title" content="Russia Universities" />
         <meta property="og:description" content="Russia Universities" />
         <meta
           property="og:url"

@@ -4,17 +4,17 @@ import Layout from "../../../components/layout"
 import Image from "next/image"
 
 const UniversityDetails = ({ universityDetails }) => {
-  const { name, images, aboutUniversity , logo } = universityDetails
+  const { name, images, aboutUniversity, logo } = universityDetails
   return (
     <Layout>
       <Head>
         <title>{name} - Study IGER</title>
-        <meta name="description" content={`Learn more about ${name}`} />
+        <meta name="description" content={`${name}`} />
         <meta property="og:title" content={`${name} - Study IGER`} />
         <meta property="og:description" content={`Learn more about ${name}`} />
         <meta
           property="og:url"
-          content={`"https://www.studyiger.com/universitiesinrussia"/${logo}`}
+          content={`https://www.studyiger.com/universitiesinrussia/${logo}`}
         />
         <meta property="og:type" content="website" />
       </Head>
