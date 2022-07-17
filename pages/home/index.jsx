@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 // eslint-disable
 import React from "react"
+import Head from "next/head"
 import Layout from "../../components/layout"
 import CustomizedCarousel from "../../components/Carousel"
 import Image from "next/image"
@@ -14,6 +15,17 @@ const images = ["/images/russia1.jpg", "/images/russia2.jpg"]
 const Home = () => {
   return (
     <div>
+      <Head>
+        <title>Study IGER</title>
+        <meta name="description" content="Study In Russia" />
+        <meta property="og:title" content="Study In Russia" />
+        <meta property="og:description" content="Study In Russia" />
+        <meta
+          property="og:url"
+          content="https://www.studyiger.com"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
       <Layout>
         <div className="relative w-full">
           <h1 className="absolute z-10 top-1/2 left-11 text-white text-5xl font-bold">

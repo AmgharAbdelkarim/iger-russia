@@ -17,7 +17,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Study IGER</title>
           <meta httpEquiv="Accept-CH" content="DPR, Width, Viewport-Width" />
           <link
             rel="stylesheet"
@@ -28,8 +27,6 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          <div id="modal-root"></div>
-          <div id="overlay-root"></div>
           <NextScript />
         </body>
       </Html>

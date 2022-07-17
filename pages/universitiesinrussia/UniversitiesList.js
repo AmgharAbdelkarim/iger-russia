@@ -9,10 +9,10 @@ const UniversitiesList = () => {
   return (
     <div className="max-w-screen-lg p-5 lg:p-0 lg:max-w-screen-lg md:max-w-screen-md max-w-screen-lg  mx-auto">
       <div className={`${cssLayout} md:gap-7`}>
-        {data.map(({ name, image }) => (
+        {data.map(({ name, logo }) => (
           <a
             key={name}
-            href={"/universitiesinrussia/" + image}
+            href={"/universitiesinrussia/" + logo}
             className="cursor-pointer w-full mb-6 md:mb-0"
           >
             <div className="rounded shadow h-full hover:shadow-xl ">
@@ -20,8 +20,8 @@ const UniversitiesList = () => {
                 <Image
                   width="100%"
                   height="100%"
-                  src={"/images/" + image + ".jpg"}
-                  alt={image}
+                  src={"/images/" + logo + ".jpeg"}
+                  alt={logo}
                 />
               </div>
               <p className="text-secondary text-lg font-semibold my-3 text-center py-5">
