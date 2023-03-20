@@ -25,9 +25,9 @@ async function main({
   })
   try {
     // send mail with defined transport object
-    let info = await transporter.sendMail({
-      from: "odr4643@gmail.com", // sender address
-      to: "studyiger@gmail.com", // list of receivers
+    await transporter.sendMail({
+      from: process.env.emailSender, // sender address
+      to: process.env.emailReceiver, // list of receivers
       subject, // Subject line
       text: `
       name : ${firstName} ${lastName}
@@ -51,7 +51,6 @@ async function main({
     return error
   }
 
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
 
 export default async function handler(req, res) {

@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react"
+import { useRouter } from "next/router"
 import Logo from "../../assets/icons/study-iger-logo.svg"
-
 
 const Header = () => {
   const [navToggle, setNavToggle] = useState(false)
+  const  {route} = useRouter()
+
   return (
     <div className="bg-secondary sticky top-0 z-30 shadow-xl">
       <div className="container md:px-0 md:mx-auto">
@@ -44,14 +46,14 @@ const Header = () => {
               <li>
                 <a
                   href="/"
-                  className="capitalize text-white mr-4 hover:text-primary "
+                  className={`capitalize text-white mr-4 hover:text-primary ${route === "/" ? "text-primary" : ""} `}
                 >
                   home
                 </a>
               </li>
               <li>
                 <a
-                  className="capitalize text-white hover:text-primary  mr-4"
+                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/studyinrussia" ? "text-primary" : ""} `}
                   href="/studyinrussia"
                 >
                   Study in Russia
@@ -59,7 +61,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className="capitalize text-white hover:text-primary  mr-4"
+                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/universitiesinrussia" ? "text-primary" : ""} `}
                   href="/universitiesinrussia"
                 >
                   Universities in Russia
@@ -67,24 +69,15 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className="capitalize text-white hover:text-primary  mr-4"
+                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/whyrussia" ? "text-primary" : ""} `}
                   href="/whyrussia"
                 >
                   Why Russia
                 </a>
               </li>
-
-              {/* <li>
-                <a
-                  className="capitalize text-white hover:text-primary  mr-4"
-                  href="/aboutus"
-                >
-                 About us
-                </a>
-                            </li> */}
               <li>
                 <a
-                  className="capitalize text-white hover:text-primary  mr-4"
+                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/contactus" ? "text-primary" : ""} `}
                   href="/contactus"
                 >
                   Contact us
