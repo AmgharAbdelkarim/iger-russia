@@ -5,7 +5,7 @@ import Logo from "../../assets/icons/study-iger-logo.svg"
 
 const Header = () => {
   const [navToggle, setNavToggle] = useState(false)
-  const  {route} = useRouter()
+  const { route } = useRouter()
 
   return (
     <div className="bg-secondary sticky top-0 z-30 shadow-xl">
@@ -46,14 +46,18 @@ const Header = () => {
               <li>
                 <a
                   href="/"
-                  className={`capitalize text-white mr-4 hover:text-primary ${route === "/" ? "text-primary" : ""} `}
+                  className={`capitalize text-white mr-4 hover:text-primary ${
+                    route === "/" ? "text-primary" : ""
+                  } `}
                 >
                   home
                 </a>
               </li>
               <li>
                 <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/studyinrussia" ? "text-primary" : ""} `}
+                  className={`capitalize text-white hover:text-primary  mr-4 ${
+                    route === "/studyinrussia" ? "text-primary" : ""
+                  } `}
                   href="/studyinrussia"
                 >
                   Study in Russia
@@ -61,7 +65,9 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/universitiesinrussia" ? "text-primary" : ""} `}
+                  className={`capitalize text-white hover:text-primary  mr-4 ${
+                    route === "/universitiesinrussia" ? "text-primary" : ""
+                  } `}
                   href="/universitiesinrussia"
                 >
                   Universities in Russia
@@ -69,7 +75,9 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/whyrussia" ? "text-primary" : ""} `}
+                  className={`capitalize text-white hover:text-primary  mr-4 ${
+                    route === "/whyrussia" ? "text-primary" : ""
+                  } `}
                   href="/whyrussia"
                 >
                   Why Russia
@@ -77,7 +85,9 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${route === "/contactus" ? "text-primary" : ""} `}
+                  className={`capitalize text-white hover:text-primary  mr-4 ${
+                    route === "/contactus" ? "text-primary" : ""
+                  } `}
                   href="/contactus"
                 >
                   Contact us

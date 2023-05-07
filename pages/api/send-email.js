@@ -45,12 +45,11 @@ async function main({
 
     return {
       status: 200,
-      detail : "Message was sent"
+      detail: "Message was sent",
     }
   } catch (error) {
     return error
   }
-
 }
 
 export default async function handler(req, res) {

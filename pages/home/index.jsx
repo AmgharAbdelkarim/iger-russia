@@ -66,22 +66,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div>
-                    <h1>Why Russia?</h1>
-                    <p>
-                        There are around 1750000 international students studying in Russia each year it is our most sincere wish that every student experiences the country at its best. Russia has a long-standing tradition in high-quality education for all citizens. Russia has one of the best education systems in the world producing a literacy rate (98%) exceeding most European countries and USA.
-                    </p>
-                </div>
-                <div>
-                    <h1>How to get admission in Russian universities?</h1>
-                    <p>Our advisors will help you in your universities we will advise you on all of the program options and helps you select the session destination and academic structure that will meet your study abroad needs. Your advisor assists you with the application process and the stages of planning for your amazing experience until your arrive to Russia</p> */}
-        {/* {
-                    push to contact us
-                    Our staff are all specialized and can relate first hand to what it is like for your Education in Russia university in easy steps.
-
-                    The team responsible for putting together this network is highly regarded and has been honored for their work in promoting Russian universities globally with activities such as conducting professional training seminars organizing direct marketing programs and conducting surveys.
-                } */}
-        {/* </div> */}
         <div className="my-20 p-5 lg:p-0 max-w-screen-sm lg:max-w-screen-lg md:max-w-screen-md mx-auto">
           <h1 className="text-primary text-2xl font-bold text-center mb-5">
             Our services{" "}

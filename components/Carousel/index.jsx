@@ -3,7 +3,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loa
 import { Carousel } from "react-responsive-carousel"
 import styled from "styled-components"
 
-
 const CarouselContainer = styled.div`
   && {
     .carousel .control-dots {
@@ -25,7 +24,7 @@ const CarouselContainer = styled.div`
     && .carousel .slider .slide {
       background: transparent !important;
       div > span {
-      width: 100% !important;
+        width: 100% !important;
       }
       img {
         height: 100% !important;
