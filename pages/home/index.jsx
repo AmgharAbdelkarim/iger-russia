@@ -14,16 +14,13 @@ const images = ["/images/russia1.jpg", "/images/russia2.jpg"]
 
 const Home = () => {
   return (
-    <div>
+    <div className="h-full">
       <Head>
         <title>Study IGER</title>
         <meta name="description" content="Study In Russia" />
         <meta property="og:title" content="Study In Russia" />
         <meta property="og:description" content="Study In Russia" />
-        <meta
-          property="og:url"
-          content="https://www.studyiger.com"
-        />
+        <meta property="og:url" content="https://www.studyiger.com" />
         <meta property="og:type" content="website" />
       </Head>
       <Layout>
