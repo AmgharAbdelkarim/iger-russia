@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 
 const Footer = () => {
   return (
@@ -9,35 +10,39 @@ const Footer = () => {
         </p>
         <ul className="flex flex-col lg:flex-row md:flex-row items-center justify-center p-0 text-center text-lg mb-0 list-none">
           <li className="list-inline-item">
-            <a className="text-sm text-white hover:underline" href="/">
-              Home
-            </a>
+            <Link href="/" passHref legacyBehavior>
+              <span className="text-sm text-white hover:underline cursor-pointer">
+                Home
+              </span>
+            </Link>
           </li>
           <li className="list-inline-item px-2">
-            <a
-              className="text-sm text-white hover:underline"
-              href="/studyinrussia"
-            >
-              Study in Russia
-            </a>
+            <Link href="/studyinrussia" passHref legacyBehavior>
+              <span className="text-sm text-white hover:underline cursor-pointer">
+                Study in Russia
+              </span>
+            </Link>
           </li>
           <li className="list-inline-item px-2">
-            <a
-              className="text-sm text-white hover:underline"
-              href="/universitiesinrussia"
-            >
-              Universities in Russia
-            </a>
+            <Link href="/universitiesinrussia" passHref legacyBehavior>
+              <span className="text-sm text-white hover:underline cursor-pointer">
+                Universities in Russia
+              </span>
+            </Link>
           </li>
           <li className="list-inline-item px-2">
-            <a className="text-sm text-white hover:underline" href="/whyrussia">
-              Why Russia
-            </a>
+            <Link href="/whyrussia" passHref legacyBehavior>
+              <span className="text-sm text-white hover:underline cursor-pointer">
+                Why Russia
+              </span>
+            </Link>
           </li>
           <li className="list-inline-item">
-            <a className="text-sm text-white hover:underline" href="/contactus">
-              Contact us
-            </a>
+            <Link href="/contactus" passHref legacyBehavior>
+              <span className="text-sm text-white hover:underline cursor-pointer">
+                Contact us
+              </span>
+            </Link>
           </li>
         </ul>
       </footer>

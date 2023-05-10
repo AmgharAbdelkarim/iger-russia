@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react"
 import { useRouter } from "next/router"
+import Link from "next/link"
 import Logo from "../../assets/icons/study-iger-logo.svg"
 
 const Header = () => {
@@ -11,15 +12,17 @@ const Header = () => {
     <div className="bg-secondary sticky top-0 z-30 shadow-xl">
       <div className="container md:px-0 md:mx-auto">
         <div className="flex justify-between lg:justify-between md:justify-between items-center relative">
-          <a href="/" className="mr-6 flex items-center justify-start h-20">
-            <img src={Logo.src} alt="logo" width="64px" height="64px" />
+          <Link href="/" passHref legacyBehavior>
+            <div className="mr-6 flex items-center justify-start h-20">
+              <img src={Logo.src} alt="logo" width="64px" height="64px" />
 
-            <div className="hidden lg:block md:hidden w-60 ml-2">
-              <h1 className="text-lg capitalize font-bold">
-                International group for education in Russia (IGER)
-              </h1>
+              <div className="hidden lg:block md:hidden w-60 ml-2">
+                <h1 className="text-lg capitalize font-bold">
+                  International group for education in Russia (IGER)
+                </h1>
+              </div>
             </div>
-          </a>
+          </Link>
 
           <div className="flex flex-row-reverse sm:flex-row items-center">
             <button
@@ -44,54 +47,63 @@ const Header = () => {
               }
             >
               <li>
-                <a
-                  href="/"
-                  className={`capitalize text-white mr-4 hover:text-primary ${
-                    route === "/" ? "text-primary" : ""
-                  } `}
-                >
-                  home
-                </a>
+                <Link href="/" passHref legacyBehavior>
+                  <span
+                    className={`capitalize text-white mr-4 cursor-pointer hover:text-primary ${
+                      route === "/" ? "text-primary" : ""
+                    } `}
+                  >
+                    home
+                  </span>
+                </Link>
               </li>
               <li>
-                <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${
-                    route === "/studyinrussia" ? "text-primary" : ""
-                  } `}
-                  href="/studyinrussia"
-                >
-                  Study in Russia
-                </a>
+                <Link href="/studyinrussia" passHref legacyBehavior>
+                  <span
+                    className={`capitalize text-white hover:text-primary  mr-4 cursor-pointer ${
+                      route === "/studyinrussia" ? "text-primary" : ""
+                    } `}
+                    href="/studyinrussia"
+                  >
+                    Study in Russia
+                  </span>
+                </Link>
               </li>
               <li>
-                <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${
-                    route === "/universitiesinrussia" ? "text-primary" : ""
-                  } `}
-                  href="/universitiesinrussia"
-                >
-                  Universities in Russia
-                </a>
+                <Link href="/universitiesinrussia" passHref legacyBehavior>
+                  <span
+                    className={`capitalize text-white hover:text-primary  mr-4 cursor-pointer ${
+                      route === "/universitiesinrussia" ? "text-primary" : ""
+                    } `}
+                    href="/universitiesinrussia"
+                  >
+                    Universities in Russia
+                  </span>
+                </Link>
               </li>
               <li>
-                <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${
-                    route === "/whyrussia" ? "text-primary" : ""
-                  } `}
-                  href="/whyrussia"
-                >
-                  Why Russia
-                </a>
+                <Link href="/whyrussia" passHref legacyBehavior>
+                  <span
+                    className={`capitalize text-white hover:text-primary  mr-4 cursor-pointer ${
+                      route === "/whyrussia" ? "text-primary" : ""
+                    } `}
+                    href="/whyrussia"
+                  >
+                    Why Russia
+                  </span>
+                </Link>
               </li>
               <li>
-                <a
-                  className={`capitalize text-white hover:text-primary  mr-4 ${
-                    route === "/contactus" ? "text-primary" : ""
-                  } `}
-                  href="/contactus"
-                >
-                  Contact us
-                </a>
+                <Link href="/contactus" passHref legacyBehavior>
+                  <span
+                    className={`capitalize text-white hover:text-primary  mr-4 cursor-pointer  ${
+                      route === "/contactus" ? "text-primary" : ""
+                    } `}
+                    href="/contactus"
+                  >
+                    Contact us
+                  </span>
+                </Link>
               </li>
             </ul>
           </div>

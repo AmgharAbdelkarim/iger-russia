@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-// eslint-disable
 import React from "react"
 import Head from "next/head"
 import Layout from "../../components/layout"
@@ -75,8 +74,8 @@ const Home = () => {
             planning to study in Russia. Whatever your goal and however much
             support you need, we have a service to suit you.
           </p>
-          <div className="flex justify-between flex-col items-center  md:flex-col md:items-center lg:flex-row lg:items-start ">
-            <div className="flex flex-col w-full hover:shadow-2xl p-10 rounded-lg items-center md:w-2/3 lg:w-1/3">
+          <div className="flex justify-between flex-col items-center gap-6  md:flex-col md:items-center lg:grid lg:grid-cols-3 ">
+            <div className="flex flex-col w-full hover:shadow-2xl p-6 lg:h-full rounded-lg items-center md:w-2/3 lg:w-full">
               <div className="w-12">
                 <img alt="support-icon" src={SupportAgentIcon.src} />
               </div>
@@ -92,7 +91,7 @@ const Home = () => {
                 what deadlines must be met.
               </p>
             </div>
-            <div className="flex flex-col  hover:shadow-2xl p-10 rounded-lg items-center w-full lg:w-1/3 my-7 lg:mx-7 lg:my-0 md:my-0 md:my-7 md:mx-0 md:w-2/3">
+            <div className="flex flex-col items-center hover:shadow-2xl p-6 rounded-lg lg:h-full w-full lg:w-full  md:w-2/3">
               <div className="w-12">
                 <img alt="support-icon" src={AccommodationSupportIcon.src} />
               </div>
@@ -106,7 +105,7 @@ const Home = () => {
                 you.
               </p>
             </div>
-            <div className="flex flex-col  w-full lg:w-1/3  hover:shadow-2xl p-10 rounded-lg items-center md:w-2/3">
+            <div className="flex flex-col  w-full lg:w-full  hover:shadow-2xl lg:h-full p-6 rounded-lg items-center md:w-2/3">
               <div className="w-12">
                 <img alt="support-icon" src={TranslateIcon.src} />
               </div>
