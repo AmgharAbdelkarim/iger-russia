@@ -3,77 +3,87 @@
 @tailwind utilities;
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+ padding: 0;
+ margin: 0;
+ font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  Segoe UI,
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  Fira Sans,
+  Droid Sans,
+  Helvetica Neue,
+  sans-serif;
 }
 html,
 body,
 #__next {
-  height: 100%;
-  box-sizing: border-box;
+ height: 100%;
+ box-sizing: border-box;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+ color: inherit;
+ text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
 /* HAMBURGER MENU */
 
 .hamburger {
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  transition: all 0.25s;
+ cursor: pointer;
+ width: 48px;
+ height: 48px;
+ transition: all 0.25s;
 }
 
 .hamburger__top-bun,
 .hamburger__bottom-bun,
 .hamburger__middle-bun {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background: #000;
-  transform: rotate(0);
-  transition: all 0.5s;
+ content: '';
+ position: absolute;
+ width: 24px;
+ height: 2px;
+ background: #000;
+ transform: rotate(0);
+ transition: all 0.5s;
 }
 
 .hamburger:hover [class*='-bun'] {
-  background: #333;
+ background: #333;
 }
 
 .hamburger__top-bun {
-  transform: translateY(-5px);
+ transform: translateY(-5px);
 }
 
 .hamburger__middle-bun {
-  transform: translateY(1px);
+ transform: translateY(1px);
 }
 
 .hamburger__bottom-bun {
-  transform: translateY(7px);
+ transform: translateY(7px);
 }
 
 .open {
-  transform: rotate(90deg);
-  transform: translateY(-1px);
+ transform: rotate(90deg);
+ transform: translateY(-1px);
 }
 
 .open .hamburger__top-bun {
-  transform: rotate(45deg) translateY(0px);
+ transform: rotate(45deg) translateY(0px);
 }
 
 .open .hamburger__bottom-bun {
-  transform: rotate(-45deg) translateY(0px);
+ transform: rotate(-45deg) translateY(0px);
 }
 .open .hamburger__middle-bun {
-  display: none;
+ display: none;
 }
 
 /* END HAMBURGER MENU */

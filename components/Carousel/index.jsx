@@ -1,7 +1,7 @@
-import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
-import { Carousel } from "react-responsive-carousel"
-import styled from "styled-components"
+import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
   && {
@@ -32,64 +32,64 @@ const CarouselContainer = styled.div`
       }
     }
   }
-`
+`;
 
 const indicatorStyles = {
-  display: "inline-block",
-  margin: "0 8px",
-  height: "9.6px",
-  width: "9.6px",
-  backgroundColor: "#ffffff",
-  borderRadius: "100%",
-  bottom: "12px",
-  cursor: "pointer",
-}
+ display: 'inline-block',
+ margin: '0 8px',
+ height: '9.6px',
+ width: '9.6px',
+ backgroundColor: '#ffffff',
+ borderRadius: '100%',
+ bottom: '12px',
+ cursor: 'pointer',
+};
 
 const renderIndicator = (onClickHandler, isSelected, index) =>
-  isSelected ? (
-    <li
-      style={{
-        ...indicatorStyles,
-        backgroundColor: "#BD0033",
-        opacity: 1,
-      }}
-      className="h-full w-full"
-    />
-  ) : (
-    <li
-      style={indicatorStyles}
-      onClick={onClickHandler}
-      onKeyDown={onClickHandler}
-      value={index}
-      key={index}
-      aria-hidden
-      className="h-full w-full"
-    />
-  )
+ isSelected ? (
+  <li
+   style={{
+    ...indicatorStyles,
+    backgroundColor: '#BD0033',
+    opacity: 1,
+   }}
+   className="h-full w-full"
+  />
+ ) : (
+  <li
+   style={indicatorStyles}
+   onClick={onClickHandler}
+   onKeyDown={onClickHandler}
+   value={index}
+   key={index}
+   aria-hidden
+   className="h-full w-full"
+  />
+ );
 
 const settings = {
-  autoPlay: true,
-  showArrows: false,
-  showThumbs: false,
-  showStatus: false,
-  infiniteLoop: true,
-  renderIndicator,
-  interval: 3000,
-  stopOnHover: true,
-}
+ autoPlay: true,
+ showArrows: false,
+ showThumbs: false,
+ showStatus: false,
+ infiniteLoop: true,
+ renderIndicator,
+ interval: 3000,
+ stopOnHover: true,
+};
 
 const CustomizedCarousel = ({ children, showIndicators }) => {
-  return (
-    <CarouselContainer className="h-full w-full">
-      <Carousel
-        className="h-full w-full"
-        {...settings}
-        showIndicators={showIndicators}
-      >
-        {children}
-      </Carousel>
-    </CarouselContainer>
-  )
-}
+ return (
+  <CarouselContainer className="h-full w-full">
+   <Carousel
+    className="h-full w-full"
+    {...settings}
+    showIndicators={showIndicators}
+   >
+    {children}
+   </Carousel>
+  </CarouselContainer>
+ );
+};
 
-export default CustomizedCarousel
+export default CustomizedCarousel;
