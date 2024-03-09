@@ -1,34 +1,17 @@
 {
-  "extends": ["next", "eslint-config-next", "prettier"],
-  "settings": {
-    "next": {
-      "rootDir": "packages/IGER-RUSSIA/"
-    }
-  },
-  "rules": {
-    "jsx-a11y/click-events-have-key-events": "warn",
-    "curly": ["error", "all"],
-    "comma-spacing":"warn",
-    "block-spacing":"warn",
-    "linebreak-style":"warn",
-    "no-multiple-empty-lines":"warn",
-    "no-trailing-spaces":"warn",
-    "no-unexpected-multiline":"warn",
-    "react-hooks/exhaustive-deps": "warn",
-    "no-unreachable": "warn",
-    "quotes": [
-      "error",
-      "double",
-      { "avoidEscape": false, "allowTemplateLiterals": true }
-    ],
-    "react/prop-types": 0,
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "components": ["Link"],
-        "specialLink": ["hrefLeft", "hrefRight"],
-        "aspects": ["invalidHref", "preferButton"]
-      }
-    ]
-  }
+ "extends": ["next", "eslint-config-next", "prettier"],
+ "rules": {
+  "jsx-a11y/click-events-have-key-events": "warn",
+  "react-hooks/exhaustive-deps": "warn",
+  "no-unreachable": "warn",
+  "react/prop-types": 0,
+  "jsx-a11y/anchor-is-valid": [
+   "error",
+   {
+    "components": ["Link"],
+    "specialLink": ["hrefLeft", "hrefRight"],
+    "aspects": ["invalidHref", "preferButton"]
+   }
+  ]
+ }
 }

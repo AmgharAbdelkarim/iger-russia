@@ -26,7 +26,7 @@ const CarouselContainer = styled.div`
       div > span {
         width: 100% !important;
       }
-      img {
+      img {ncbvx;,w:
         height: 100% !important;
         width: 100% !important;
       }
@@ -62,7 +62,6 @@ const renderIndicator = (onClickHandler, isSelected, index) =>
       onKeyDown={onClickHandler}
       value={index}
       key={index}
-      role="presentation"
       aria-hidden
       className="h-full w-full"
     />
