@@ -18,15 +18,16 @@ const UniversityDetails = ({ universityDetails }) => {
     />
     <meta property="og:type" content="website" />
    </Head>
-   <div className="relative w-full h-[500px]">
+   <div className="relative w-full h-96 my-6">
     <Image
      layout="fill"
      objectFit="contain"
+     height="500"
      src={'/images/' + images[0] + '.jpg'}
      alt={images[0]}
     />
    </div>
-   <div className="my-20 p-5 lg:p-0 lg:max-w-screen-lg md:max-w-screen-md max-w-screen-lg mx-auto">
+   <div className="mb-5 p-5 lg:p-0 lg:max-w-screen-lg md:max-w-screen-md max-w-screen-lg mx-auto">
     <h1 className="text-primary text-2xl font-bold text-center mb-5">
      {name}{' '}
     </h1>

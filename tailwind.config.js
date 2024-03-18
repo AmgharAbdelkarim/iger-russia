@@ -7,7 +7,6 @@ const config = {
     DEFAULT: '0 0px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
     'drop-down-shadow': '0 6px 8px 8px rgba(0, 0, 0, 0.04)',
    },
-
    colors: {
     primary: '#BD0033',
     primary0: '#ff8aa9',

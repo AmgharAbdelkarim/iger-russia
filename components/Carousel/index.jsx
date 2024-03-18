@@ -4,34 +4,34 @@ import { Carousel } from 'react-responsive-carousel';
 import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
-  && {
-    .carousel .control-dots {
-      position: absolute;
-      margin: 10px 0;
-      padding: 0;
-      text-align: center;
-      bottom: 10px;
-      right: auto;
-      width: 100%;
-      height: 8px;
-    }
-    .carousel .control-dots li:hover {
-      opacity: 0.3;
-    }
-    .carousel.carousel-slider {
-      height: 100%;
-    }
-    && .carousel .slider .slide {
-      background: transparent !important;
-      div > span {
-        width: 100% !important;
-      }
-      img {ncbvx;,w:
-        height: 100% !important;
-        width: 100% !important;
-      }
-    }
+ && {
+  .carousel .control-dots {
+   position: absolute;
+   margin: 10px 0;
+   padding: 0;
+   text-align: center;
+   bottom: 10px;
+   right: auto;
+   width: 100%;
+   height: 8px;
   }
+  .carousel .control-dots li:hover {
+   opacity: 0.3;
+  }
+  .carousel.carousel-slider {
+   height: 100%;
+  }
+  && .carousel .slider .slide {
+   background: transparent !important;
+   div > span {
+    width: 100% !important;
+   }
+   img {
+    height: 100% !important;
+    width: 100% !important;
+   }
+  }
+ }
 `;
 
 const indicatorStyles = {

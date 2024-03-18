@@ -30,7 +30,13 @@ const Home = () => {
      <CustomizedCarousel showIndicators={images.length > 1}>
       {images.map((srcImage) => (
        <div className="relative w-full h-[500px]" key={srcImage}>
-        <Image src={srcImage} alt="slider" layout="fill" objectFit="fill" />
+        <Image
+         src={srcImage}
+         alt="slider"
+         layout="fill"
+         objectFit="fill"
+         priority
+        />
        </div>
       ))}
      </CustomizedCarousel>
