@@ -10,7 +10,7 @@ const TextField = ({ label, type, name, placeholder, errors, register }) => {
    <input
     id={id}
     className={cx(
-     'h-16 w-full px-4 focus:outline-none pt-6 transition-colors transition-shadow shadow-sm text-on-primary0 border border-gray-300 duration-200 rounded-md focus:shadow-none focus:ring-0',
+     'h-16 w-full px-4 focus:outline-none pt-6 transition-colors shadow-sm text-on-primary0 border border-gray-300 duration-200 rounded-md focus:shadow-none focus:ring-0',
      {
       'focus:ring-2 focus:ring-blue-300 focus:border-blue-400': !error,
       'border-red-400 focus:ring-2 focus:ring-red-300 focus:border-red-400':

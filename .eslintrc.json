@@ -1,5 +1,5 @@
 {
- "extends": ["next", "eslint-config-next", "prettier"],
+ "extends": ["next", "eslint-config-next"],
  "rules": {
   "jsx-a11y/click-events-have-key-events": "warn",
   "react-hooks/exhaustive-deps": "warn",
